@@ -1,0 +1,13 @@
+@import '../../../assets/sass/index.scss';
+
+.avatar-wrapper {
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  .photo {
+    height: 105px;
+    width: 85px;
+  }
+}

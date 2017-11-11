@@ -1,0 +1,15 @@
+@import '../../assets/sass/index.scss';
+
+.hcard-wrapper {
+  align-items: center;
+  display: flex;
+  background-color: $light-gray-color;
+
+  > * {
+    flex: 1;
+  }
+
+  @media (max-width: $break-point-max-witdh) { 
+    flex-direction: column;
+  }
+}

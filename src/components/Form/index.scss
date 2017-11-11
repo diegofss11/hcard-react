@@ -1,0 +1,33 @@
+@import '../../assets/sass/index.scss';
+
+.hcard-form {
+  padding: 40px;
+  background-color: white;
+  width: 100%;
+
+  .hcard-row {
+    display: flex;
+  }
+
+  .hcard-form-title {
+    color: $dark-blue;
+    font-size: 28px;
+    display: block;
+  }
+
+  @media (max-width: $break-point-max-witdh) { 
+    padding-top: 20px;
+  }
+
+  .groupped-row {
+    display: flex;
+  
+    > * {
+      flex: 1;
+    }
+  
+    @media (max-width: $break-point-max-witdh) { 
+      flex-direction: column;
+    }
+  }
+}

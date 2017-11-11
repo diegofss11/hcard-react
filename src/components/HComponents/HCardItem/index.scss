@@ -1,0 +1,25 @@
+@import '../../../assets/sass/index.scss';
+
+.hcard-row {
+  .card-item-label {
+    color: $dark-blue;
+    display: inline-block;
+    font-size: 12px;
+    width: 80px;
+    text-transform: uppercase;
+
+    &.hide {
+      display: none;
+    }
+  }
+
+  * + * {
+    color: black;
+  }
+
+  a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}

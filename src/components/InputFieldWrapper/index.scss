@@ -1,0 +1,23 @@
+@import '../../assets/sass/index.scss';
+
+.input-field-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  + .input-field-wrapper {
+    margin-left: 20px;
+
+    @media (max-width: $break-point-max-witdh) { 
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+
+  .input-field {
+    border: 1px solid $gray;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+}

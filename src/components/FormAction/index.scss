@@ -1,0 +1,22 @@
+@import '../../assets/sass/index.scss';
+
+.form-bottom {
+  display: flex;
+  margin-top: 30px;
+
+  .button + .button {
+    margin-left: 20px;
+  }
+
+  @media (max-width: $break-point-max-witdh) { 
+    flex-direction: column;
+
+    .button {
+      margin-top: 10px;
+    }
+
+    .button + .button {
+      margin-left: 0;
+    }
+  }
+}

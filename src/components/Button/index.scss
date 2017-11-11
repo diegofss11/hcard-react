@@ -1,0 +1,19 @@
+@import '../../assets/sass/index.scss';
+
+.button {
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  flex: 1;
+  font-size: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.primary {
+  background-color: $primary-button-color;
+}
+
+.secondary {
+  background-color: $secondary-button-color;
+}

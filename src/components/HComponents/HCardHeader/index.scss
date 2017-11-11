@@ -1,0 +1,18 @@
+@import '../../../assets/sass/index.scss';
+
+.hcard-header {
+  background: $dark-blue;
+  padding: 40px 25px 25px;
+  position: relative;
+
+  .hcard-row {
+    border-bottom: 0;
+    margin-top: 0;
+    min-height: 30px;
+  }
+
+  * + * {
+    color: white;
+    font-size: 24px;
+  }
+}

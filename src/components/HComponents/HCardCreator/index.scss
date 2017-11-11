@@ -1,0 +1,30 @@
+@import '../../../assets/sass/index.scss';
+
+.vcard {
+  background: white;
+  margin-left: 45px;
+  margin-right: 25px;
+  width: 100%;
+
+  @media (max-width: $break-point-max-witdh) { 
+    margin: 0 auto;
+  }
+}
+
+.hcard-body {
+  padding: 20px 25px 30px;
+}
+
+.hcard-row {
+  border-bottom: 1px solid $gray;
+  margin-top: 15px;
+  padding-bottom: 5px;
+}
+
+.row-groupped {
+  display: flex;
+
+  > * {
+    flex: 1;
+  }
+}
