@@ -25,18 +25,20 @@ class CardWrapper extends React.Component {
 
   onFormSubmit = (event) => {
     event.preventDefault();
+
     hCardConverter(document.getElementById('vcard'));
   }
 
   uploadAvatar = (event) => {
     event.preventDefault();
+
     const file = event.target.files[0];
     const imgSrc = window.URL.createObjectURL(file);
     this.setState({avatar: imgSrc});
   }
 
-  updateCardFields = ({currentTarget}) => {
-    const {id, value} = currentTarget;
+  updateCardFields = ({target}) => {
+    const {id, value} = target;
     this.setState({ [id]: value });
   }
 
@@ -72,7 +74,7 @@ class CardWrapper extends React.Component {
           </FormSection>
 
           <FormAction>
-            <Button styleClass="secondary" type="submit" onClick={triggerFileUpload} text="Upload Avatar" />
+            <Button styleClass="secondary" type="button" onClick={triggerFileUpload} text="Upload Avatar" />
             <Button styleClass="primary" type="submit" text="Create hCard" />
           </FormAction>
 
