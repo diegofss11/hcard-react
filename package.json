@@ -10,8 +10,9 @@
   ],
   "scripts": {
     "start": "npm run build",
-    "test": "mocha --compilers js:babel-register --require ./tests/helpers.js --require ignore-styles ./tests/* --recursive",
+    "test": "nyc --reporter=html mocha --compilers js:babel-register --require ./tests/helpers.js --require ignore-styles ./tests/* --recursive",
     "tdd": "npm test -- --watch",
+    "coverage": "nyc report",
     "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --inline --hot",
     "build:prod": "webpack -p && cp src/index.html dist/index.html"
   },
@@ -31,6 +32,7 @@
     "jsdom": "^11.3.0",
     "mocha": "^4.0.1",
     "node-sass": "^4.6.0",
+    "nyc": "^11.3.0",
     "sass-loader": "^6.0.6",
     "sinon": "^4.1.2",
     "style-loader": "^0.19.0",

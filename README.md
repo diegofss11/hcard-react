@@ -1,4 +1,6 @@
-<h1><p align="center">::blue_book: - hCard - ::blue_book:</p></h1>
+<h1><p align="center">:blue_book: - hCard - :blue_book:</p></h1>
+
+[![Build Status](https://travis-ci.org/diegofss11/hcard-react.svg?branch=master)](https://travis-ci.org/diegofss11/hcard-react)
 
 ### Before you start
 
@@ -14,6 +16,7 @@ Make sure you have [Node.js](https://nodejs.org/en/) installed.
 $ npm build                     # Create dist folder with index and .js files
 $ npm run test                  # Runs the unit tests
 $ npm run tdd                   # Runs the unit tests with the flag `--watch` (useful for TDD)
+$ npm run coverage              # Runs nyc to report the test coverage
 ```
 
 
