@@ -17,14 +17,11 @@
 
   @media (max-width: $break-point-max-witdh) { 
     padding-top: 20px;
+    margin-bottom: 0;
   }
 
   .groupped-row {
     display: flex;
-  
-    > * {
-      flex: 1;
-    }
   
     @media (max-width: $break-point-max-witdh) { 
       flex-direction: column;
