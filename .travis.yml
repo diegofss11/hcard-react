@@ -5,3 +5,7 @@ script:
   - npm run test
 after_success:
   - npm run coverage
+deploy:
+  provider: heroku
+  api_key:
+    secure: eaee6133-d1a6-41a7-b761-329046ff7754
