@@ -5,7 +5,7 @@
     color: $dark-blue;
     display: inline-block;
     font-size: 12px;
-    width: 80px;
+    width: 70px;
     text-transform: uppercase;
 
     &.hide {
@@ -13,8 +13,8 @@
     }
   }
 
-  * + * {
-    color: black;
+  .card-item-value {
+    padding-left: 10px;
   }
 
   a {

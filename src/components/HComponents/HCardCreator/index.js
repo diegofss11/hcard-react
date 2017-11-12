@@ -16,9 +16,9 @@ const HCardCreator = ({
     <div id="vcard" className="vcard">
       <HCardHeader>
         <HCardItem>
-          <div className="fn">
+          <span className="fn">
             {givenName} {surname}
-          </div>
+          </span>
         </HCardItem>
         <HCardAvatar imgSource={avatar}/>
       </HCardHeader>

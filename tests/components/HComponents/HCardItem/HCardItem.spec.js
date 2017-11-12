@@ -10,7 +10,8 @@ describe('<HCardItem />', () => {
       </HCardItem>
     );
 
-    expect(cardItem.find('span').text()).to.equal('labelField');
+    expect(cardItem.find('.card-item-label').text()).to.equal('labelField');
+    expect(cardItem.find('.card-item-value').children().type()).to.equal('a');
     expect(cardItem.find('div').children()).to.have.length(2);
     expect(cardItem.find('a')).to.have.length(1);
   });

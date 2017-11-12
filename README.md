@@ -1,4 +1,4 @@
-<h1><p align="center">:blue_book: - hCard - :blue_book:</p></h1>
+<h1><p align="center">:blue_book: hCard :blue_book:</p></h1>
 
 [![Build Status](https://travis-ci.org/diegofss11/hcard-react.svg?branch=master)](https://travis-ci.org/diegofss11/hcard-react)
 

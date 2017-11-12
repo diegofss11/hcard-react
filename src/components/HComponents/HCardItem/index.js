@@ -11,7 +11,9 @@ const HCardItem = ({label, children}) => {
         {label}
       </span>
       
-      {children}
+      <span className="card-item-value">
+        {children}
+      </span>
     </div>
   );
 }

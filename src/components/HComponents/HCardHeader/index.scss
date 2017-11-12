@@ -9,10 +9,11 @@
     border-bottom: 0;
     margin-top: 0;
     min-height: 30px;
-  }
 
-  * + * {
-    color: white;
-    font-size: 24px;
+    .card-item-value {
+      color: white;
+      font-size: 24px;
+      padding-left: 0;
+    }
   }
 }
